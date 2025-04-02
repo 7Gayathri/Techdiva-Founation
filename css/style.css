@@ -1,0 +1,592 @@
+/** Hash Configs **/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+/* DM Sans Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+
+  /** Font **/
+  --font1: ;
+  --font2: ;
+  --font3: ;
+  --font4: ;
+
+  --fontSize1: ;
+  --fontSize2: ;
+  --fontSize3: ;
+  --fontSize4: ;
+  --fontSize5: ;
+  --fontSize6: ;
+
+  /** Colors **/
+  --color1:#F5476B ;
+  --color2:#100F0F ;
+  --color3:#161414 ;
+  --color4:#414044 ;
+  --color5:white;
+  --color6:#FFC7D3;
+  --color7: ;
+
+  --xs: 1%;
+  --sm: 2.5%;
+  --md: 5%;
+  --lg: 7.5%;
+  --xl: 10%;
+
+  --px-xs: 1%;
+  --px-sm: 2.5%;
+  --px-md: 5%;
+  --px-lg: 7.5%;
+  --px-xl: 10%;
+
+
+}
+
+/** Hash Configs Ends **/
+
+/*** 
+====================================================================
+	Text - START
+====================================================================
+***/
+
+body {
+  font-family: 'Aeonik', sans-serif;
+  font-size: var();
+  color: var();
+  margin: auto;
+}
+
+h1 {
+  font-size: 5.8rem;
+  color: var(--color2);
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -2%;
+}
+
+h2 {
+  font-family: 'DM sans';
+  font-size: 4rem;
+  color:var(--color2);
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -2%;
+}
+
+h3 {
+  font-size: 2.6rem;
+  color:var(--color2);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: -2%;
+}
+
+h4 {
+  font-family: var();
+  font-size: var();
+  color: var();
+}
+
+h5 {
+  font-family: var();
+  font-size : 1.9rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--color5);
+  letter-spacing: 0%;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--color4);
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 1%;
+}
+
+
+/* lg screen*/
+@media (max-width: 1012px) {}
+
+/* md screen*/
+@media (max-width: 768px) {
+
+  h1,
+  .h1 {
+    font-size: 6.4rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 3.4rem;
+  }
+}
+
+/* sm screen*/
+@media (max-width: 577px) {
+
+  /** DESIGN **/
+  h1,
+  .h1 {
+    font-size: 4.7rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.9rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.8rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.6rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.6rem;
+  }
+}
+
+/*** 
+====================================================================
+	Text - Ends
+====================================================================
+***/
+
+
+/*** 
+====================================================================
+    Links - START
+====================================================================
+***/
+a {
+  text-decoration: none;
+  color: var(--color2);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+a:hover {
+  color: var();
+}
+
+a:active {
+  color: var();
+}
+
+a:visited {
+  color: var();
+}
+
+/** Setting the <a> tag colors for header**/
+header nav a {
+  color: var();
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var();
+}
+
+header nav a:active {
+  color: var();
+}
+
+header nav a:visited {
+  color: var();
+}
+
+/** Setting the <a> tag colors for footer**/
+footer nav a {
+  color: var();
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: var();
+}
+
+footer nav a:active {
+  color: var();
+}
+
+footer nav a:visited {
+  color: var();
+}
+
+/*** 
+====================================================================
+    Links - END
+====================================================================
+***/
+
+/*** 
+====================================================================
+    Common Styling - Start
+====================================================================
+***/
+/*** Validation Styling ***/
+/*** temp styling for reference ***/
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: lightcoral;
+}
+
+.answer {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid grey;
+  margin: 5px;
+  display: inline-block;
+}
+
+.selected {
+  background-color: blue !important;
+}
+
+/*** END ***/
+
+/*** START ***/
+
+/** Level1 - Single Classes  **/
+.bg {
+  --imgBg: url("");
+  --imgBgHeight: 100vh;
+  width: 100%;
+  background: var(--imgBg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: var(--imgBgHeight);
+  background-position: center;
+}
+
+/** Level2 - Double Classes **/
+/** Level3 - Multi Classes **/
+
+/*** END ***/
+
+/*** START ***/
+
+/** Level1 - Single Classes  **/
+/** Level2 - Double Classes **/
+/** Level3 - Multi Classes **/
+
+/*** END ***/
+
+/*** 
+====================================================================
+    Common Styling - END
+====================================================================
+***/
+img {
+  width: 100%;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+  margin: unset;
+}
+section {
+  padding: 2.5% 6%;
+}
+/*** 
+====================================================================
+    Page Styling - Start
+====================================================================
+***/
+
+/*** START ***/
+
+/** Level1 - Single Classes  **/
+
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('fonts/Aeonik-Regular.woff2') format('woff2'),
+    url('fonts/Aeonik-Regular.woff') format('woff'),
+    url('fonts/Aeonik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.navbar {
+  font-family: 'DM Sans', sans-serif;
+  padding: 2.5% 7%;
+}
+
+/* logo-container */
+#h1 .n0-i1 {
+  width: 40%;
+}
+
+#h1 button {
+  font-size: 1.8rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  color:var(--color5);
+  background-color:var(--color1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* ====================================== Home Page Style ====================================== */
+.home #m1 h1 {
+  font-weight: 400;
+}
+
+.heading-coloured {
+  color:var(--color1);
+  font-weight: 700;
+}
+
+.home #m1 .n0-i2{
+  width: 80%;
+}
+
+.home #m2,.about #m1 {
+  background-color:var(--color1);
+  /* background: linear-gradient(to bottom,var(--color1),var(--color1) 40%, rgba(255, 78, 117, 0) 100%); */
+  box-shadow: 0px -60px 60pxvar(--color1);
+  z-index: 1;
+  padding-bottom: 5%;
+}
+
+.home #m2 .n1-i1{
+  width: 80%;
+}
+
+/* .gradient-box {
+  background: linear-gradient(to bottom,var(--color1),var(--color1) 40%, rgba(255, 78, 117, 0) 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+
+.para-1 {
+  font-size: 3.4rem;
+  color:var(--color5);
+  font-weight: 400;
+  line-height: 4.2rem;
+}
+
+.home #m2 .n1-i2{
+  top: 60%;
+}
+
+.home #m2 .n1-i2 img {
+  border-radius: 20px;
+}
+
+.home #m3 {
+  margin-top: 20%;
+}
+
+#m3 .n0-i1,.about #m2 .para-1{
+  width: 80%;
+}
+
+#m3 .n0-i1 p{
+  color: #18181A;
+}
+
+.para-3 {
+  font-size: 1.6rem;
+  color: #414044;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 1%;
+}
+
+hr {
+  border: 0;
+  border-top: 0.75px solid var(--color6);
+}
+
+.agh-card {
+  background-image: url('../img/agh_bg.png');
+}
+
+.twb-card {
+  background-image: url('../img/techies-without-border-bg.png');
+}
+
+.techhub-card {
+  background-image: url('../img/techhub-bg.png');
+}
+
+.tdclass-card {
+  background-image: url('../img/td-class-bg.png');
+}
+
+.cards {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.home #m5 .n0-i2 .n1-i1 h3,
+.home #m5 .n0-i2 .n1-i1 p{
+  color:var(--color5);
+}
+
+/*Size of AGH, TWB, TH, TD logo images */
+.home #m5 .n0-i2 .n3-i2{
+  width: 75%;
+}
+
+.home #m6 {
+  margin-top: 2.5%;
+}
+
+.home #m7 {
+  margin-top: 2.5%;
+}
+
+.home #m7 .achievements {
+  background-image: url('../img/girls-with-certificates.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.home #m7 .achievements h1 {
+  color:var(--color5);
+  font-weight: 700;
+}
+
+.home #m7 .achievements p {
+  color:var(--color5);
+  background-color:var(--color1);
+}
+
+.story-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+
+/* ====================================== About Page Style ====================================== */
+.about #m1{
+  padding-bottom: unset;
+  /* margin-top: -1%; */
+  /* --px-lg:9%; */
+  /* height: 380px; */
+}
+.about #m1 h1{
+  color: var(--color5);
+  line-height: 1%;
+}
+.about #m1 .n0-i2{
+  top: 38%;
+}
+.about #m2 .para-1{
+  color:var(--color4)
+}
+.about #m2 {
+  --px-xl:18%;
+}
+.about #m3 h1{
+  line-height: 86px;
+}
+.about #m3 .n3-i2{
+  background-color:var(--color1) ;
+  height:fit-content;
+  border-radius: 12px;
+  /* align-self: end; */
+}
+.about #m3 p{
+  color: var(--color5);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 200;
+  font-family: 'DM Sans';
+}
+.about #m4 {
+  padding: 2.5% 0%;
+}
+.about #m4 .n0-i1{
+padding-right: 6%;
+    padding-left:6%;
+
+}
+.about #m5 i{
+  font-size: 3.5rem;
+  color: #FFDAE2;
+}
+.about #m5 hr{
+  margin-left: 11%;
+}
+/** Level2 - Double Classes **/
+/** Level3 - Multi Classes **/
+
+/*** END ***/
+
+/*** START ***/
+
+/** Level1 - Single Classes  **/
+/** Level2 - Double Classes **/
+/** Level3 - Multi Classes **/
+
+/*** END ***/
+
+/*** 
+====================================================================
+    Page Styling - END
+====================================================================
+***/
+
+/*** 
+====================================================================
+   Responsive - START
+====================================================================
+***/
+
+/* large laptop screen*/
+@media (min-width: 1440px) {
+
+  .nav-menu h3 {
+    font-size: 2.4rem;
+  }
+
+  .heading,
+  .heading-coloured {
+    font-size: 7.8rem;
+  }
+}
+
+/* small laptop screen*/
+@media (max-width: 1012px) {}
+
+/* tablet screen*/
+@media (max-width: 768px) {}
+
+/* mobile screen*/
+@media (max-width: 577px) {}
+
+
+/*** 
+====================================================================
+   Responsive - END
+====================================================================
+***/
