@@ -22,12 +22,12 @@
   --fontSize6: ;
 
   /** Colors **/
-  --color1: #F5476B;
-  --color2: #100F0F;
-  --color3: #161414;
-  --color4: #414044;
-  --color5: white;
-  --color6: #FFC7D3;
+  --color1:#F5476B ;
+  --color2:#100F0F ;
+  --color3:#161414 ;
+  --color4:#414044 ;
+  --color5:white;
+  --color6:#FFC7D3;
   --color7: ;
 
   --xs: 1%;
@@ -54,7 +54,7 @@
 ***/
 
 body {
-  font-family: 'DM Sans';
+  font-family: 'Aeonik', sans-serif;
   font-size: var();
   color: var();
   margin: auto;
@@ -65,25 +65,25 @@ h1 {
   color: var(--color2);
   font-weight: 700;
   line-height: 66px;
-  letter-spacing: 0px;
+  letter-spacing: -2%;
 }
 
 h2 {
   font-family: 'DM sans';
   font-size: 4rem;
-  color: var(--color2);
+  color:var(--color2);
   font-weight: 700;
   line-height: 4.8rem;
-  letter-spacing: -2px;
+  letter-spacing: -2%;
 }
 
 h3 {
   font-size: 2.6rem;
-  color: var(--color2);
+  color:var(--color2);
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   line-height: 3.4rem;
-  letter-spacing: -1px;
+  letter-spacing: -2%;
 }
 
 h4 {
@@ -92,13 +92,22 @@ h4 {
   color: var();
 }
 
+h5 {
+  font-family: var();
+  font-size : 1.9rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--color5);
+  letter-spacing: 0%;
+}
+
 p {
   font-size: 1.8rem;
   font-family: 'DM Sans', sans-serif;
   color: var(--color4);
   font-weight: 400;
   line-height: 2.6rem;
-  letter-spacing: 0px;
+  letter-spacing: 1%;
 }
 
 
@@ -287,27 +296,15 @@ img {
   width: 100%;
   box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
 p {
   margin: unset;
 }
-
-ul{
-  padding: 0;
-}
-
-#f1 a {
-  line-height: 3rem;
-  /* display: block; */
-}
-
 section {
   padding: 2.5% 6%;
 }
-
 /*** 
 ====================================================================
     Page Styling - Start
@@ -331,7 +328,7 @@ section {
 
 .navbar {
   font-family: 'DM Sans', sans-serif;
-  padding: 2.5% 5%;
+  padding: 2.5% 7%;
 }
 
 /* logo-container */
@@ -339,13 +336,13 @@ section {
   width: 40%;
 }
 
-.nav-button {
-  font-size: 1.6rem;
-  padding: 15px 20px;
+#h1 button {
+  font-size: 1.8rem;
+  padding: 10px 15px;
   border: none;
   border-radius: 30px;
-  color: var(--color5);
-  background-color: var(--color1);
+  color:var(--color5);
+  background-color:var(--color1);
 }
 
 button:hover {
@@ -358,24 +355,23 @@ button:hover {
 }
 
 .heading-coloured {
-  color: var(--color1);
+  color:var(--color1);
   font-weight: 700;
 }
 
-/* .home #m1 .n0-i2 {
+.home #m1 .n0-i2{
   width: 80%;
-  width: 100%;
-} */
+}
 
-.home #m2 {
-  background-color: var(--color1);
+.home #m2,.about #m1 {
+  background-color:var(--color1);
   /* background: linear-gradient(to bottom,var(--color1),var(--color1) 40%, rgba(255, 78, 117, 0) 100%); */
-  box-shadow: 0px -60px 60px var(--color1);
+  box-shadow: 0px -60px 60pxvar(--color1);
   z-index: 1;
   padding-bottom: 5%;
 }
 
-.home #m2 .n1-i1 {
+.home #m2 .n1-i1{
   width: 80%;
 }
 
@@ -384,15 +380,15 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 } */
 
+
 .para-1 {
-  /* font-size: 3.4rem; */
-  font-size: 3rem;
-  color: var(--color5);
+  font-size: 3.4rem;
+  color:var(--color5);
   font-weight: 400;
   line-height: 4.2rem;
 }
 
-.home #m2 .n1-i2 {
+.home #m2 .n1-i2{
   top: 60%;
 }
 
@@ -404,11 +400,11 @@ button:hover {
   margin-top: 20%;
 }
 
-#m3 .n0-i1 {
+#m3 .n0-i1,.about #m2 .para-1{
   width: 80%;
 }
 
-#m3 .n0-i1 p {
+#m3 .n0-i1 p{
   color: #18181A;
 }
 
@@ -418,8 +414,7 @@ button:hover {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   line-height: 2.4rem;
-  /* letter-spacing: 1%; */
-  letter-spacing: 0px;
+  letter-spacing: 1%;
 }
 
 hr {
@@ -450,29 +445,14 @@ hr {
   border-radius: 20px;
 }
 
-/* .home #m5 .n0-i2 .n1-i1 h3,
-.home #m5 .n0-i2 .n1-i1 p {
-  color: var(--color5);
-} */
-
 .home #m5 .n0-i2 .n1-i1 h3,
-.home #m5 .n0-i2 .n1-i1 p {
-  color: var(--color5);
-}
-
-/*  */
-.home #m5 .n0-i2 .n1-i1 .n2-i2 h3{
-  color: #100F0F;
-}
-
-.home #m5 .n0-i2 .n1-i1 .n2-i2 p{
-  color: #414044;
+.home #m5 .n0-i2 .n1-i1 p{
+  color:var(--color5);
 }
 
 /*Size of AGH, TWB, TH, TD logo images */
-.home #m5 .n0-i2 .n3-i2 {
-  /* width: 75%; */
-  width: 100%;
+.home #m5 .n0-i2 .n3-i2{
+  width: 75%;
 }
 
 .home #m6 {
@@ -492,14 +472,13 @@ hr {
 }
 
 .home #m7 .achievements h1 {
-  color: var(--color5);
+  color:var(--color5);
   font-weight: 700;
 }
 
 .home #m7 .achievements p {
-  color: var(--color5);
-  background-color: var(--color1);
-  padding: 0 10px;
+  color:var(--color5);
+  background-color:var(--color1);
 }
 
 .story-card {
@@ -507,68 +486,57 @@ hr {
   box-shadow: 0px 0px 5px 0px gray;
 }
 
-.home #m9 .n1-i1 img,
-.home #m9 .n1-i2 img {
-  height: fit-content;
+/* ====================================== About Page Style ====================================== */
+.about #m1{
+  padding-bottom: unset;
+  /* margin-top: -1%; */
+  /* --px-lg:9%; */
+  /* height: 380px; */
 }
-
-.tech-accessibility-banner {
-  background-color: #F5476B;
-  border-radius: 10px;
+.about #m1 h1{
+  color: var(--color5);
+  line-height: 1%;
 }
-
-.tech-accessibility-banner .n0-i1 {
-  align-content: center;
+.about #m1 .n0-i2{
+  top: 38%;
 }
-
-.tech-accessibility-banner h2,
-.tech-accessibility-banner p {
-  color: #FFFFFF;
+.about #m2 .para-1{
+  color:var(--color4)
 }
-
-.tech-accessibility-banner .heading-coloured2 {
-  color: #FFD2DD;
+.about #m2 {
+  --px-xl:18%;
 }
-
-.tech-accessibility-banner img{
-  border-radius: 0 10px 10px 0;
+.about #m3 h1{
+  line-height: 86px;
 }
-
-button {
+.about #m3 .n3-i2{
+  background-color:var(--color1) ;
+  height:fit-content;
+  border-radius: 12px;
+  /* align-self: end; */
+}
+.about #m3 p{
+  color: var(--color5);
   font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 200;
   font-family: 'DM Sans';
-  font-weight: 400;
-  line-height: 16px;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 20px;
-  color: #F5476B;
 }
-
-footer {
-  background-color: #F5476B;
-  margin-top: 2.5%;
+.about #m4 {
+  padding: 2.5% 0%;
 }
+.about #m4 .n0-i1{
+padding-right: 6%;
+    padding-left:6%;
 
-#f1 h2,
-#f1 p,
-#f1 a {
-  color: #FFFFFF;
-  /* font-weight: 400; */
 }
-
-#f1 .n0-i2 .n2-i1 {
-  --xl: 15%;
+.about #m5 i{
+  font-size: 3.5rem;
+  color: #FFDAE2;
 }
-
-#f1 .n0-i2 p,
-#f1 .n0-i3 p{
-  color: #FEACBD;
-  font-weight: 600;
+.about #m5 hr{
+  margin-left: 11%;
 }
-
-
-
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
 
