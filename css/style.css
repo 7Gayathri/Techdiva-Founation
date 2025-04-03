@@ -22,13 +22,13 @@
   --fontSize6: ;
 
   /** Colors **/
-  --color1:#F5476B ;
-  --color2:#100F0F ;
-  --color3:#161414 ;
-  --color4:#414044 ;
-  --color5:white;
-  --color6:#FFC7D3;
-  --color7: ;
+  --color1: #F5476B;
+  --color2: #100F0F;
+  --color3: #161414;
+  --color4: #414044;
+  --color5: white;
+  --color6: #FFC7D3;
+  --color7: #FFF0F3;
 
   --xs: 1%;
   --sm: 2.5%;
@@ -62,7 +62,7 @@ body {
 
 h1 {
   font-size: 5.8rem;
-  color: var(--color2);
+  /* color: var(--color2); */
   font-weight: 700;
   line-height: 66px;
   letter-spacing: 0px;
@@ -71,7 +71,7 @@ h1 {
 h2 {
   font-family: 'DM sans';
   font-size: 4rem;
-  color: var(--color2);
+  /* color: var(--color2); */
   font-weight: 700;
   line-height: 4.8rem;
   letter-spacing: -2px;
@@ -79,7 +79,7 @@ h2 {
 
 h3 {
   font-size: 2.6rem;
-  color: var(--color2);
+  /* color: var(--color2); */
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   line-height: 3.4rem;
@@ -90,6 +90,15 @@ h4 {
   font-family: var();
   font-size: var();
   color: var();
+}
+
+h5 {
+  font-family: var();
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2rem;
+  /* color: var(--color5); */
+  letter-spacing: 0%;
 }
 
 p {
@@ -287,15 +296,18 @@ img {
   width: 100%;
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
 p {
   margin: unset;
 }
+
 section {
   padding: 2.5% 6%;
 }
+
 /*** 
 ====================================================================
     Page Styling - Start
@@ -449,11 +461,11 @@ hr {
 }
 
 /*  */
-.home #m5 .n0-i2 .n1-i1 .n2-i2 h3{
+.home #m5 .n0-i2 .n1-i1 .n2-i2 h3 {
   color: #100F0F;
 }
 
-.home #m5 .n0-i2 .n1-i1 .n2-i2 p{
+.home #m5 .n0-i2 .n1-i1 .n2-i2 p {
   color: #414044;
 }
 
@@ -518,7 +530,7 @@ hr {
   color: #FFD2DD;
 }
 
-.tech-accessibility-banner img{
+.tech-accessibility-banner img {
   border-radius: 0 10px 10px 0;
 }
 
@@ -550,62 +562,134 @@ footer {
 }
 
 #f1 .n0-i2 p,
-#f1 .n0-i3 p{
+#f1 .n0-i3 p {
   color: #FEACBD;
   font-weight: 600;
 }
 
 /* ====================================== About Page Style ====================================== */
-.about #m1{
+.about #m1 {
   padding-bottom: unset;
-  /* margin-top: -1%; */
-  /* --px-lg:9%; */
-  /* height: 380px; */
+  background-color: var(--color1);
+  z-index: 1;
 }
-.about #m1 h1{
+
+.about #m1 h1 {
   color: var(--color5);
   line-height: 1%;
 }
+
 .about #m1 .n0-i2{
   top: 38%;
 }
-.about #m2 .para-1{
-  color:var(--color4)
+
+.about #m2 .para-1 {
+  color: var(--color4)
 }
+
 .about #m2 {
-  --px-xl:18%;
+  --px-xl: 18%;
 }
-.about #m3 h1{
+
+.about #m3 h1 {
   line-height: 86px;
 }
-.about #m3 .n3-i2{
-  background-color:var(--color1) ;
-  height:fit-content;
+
+.about #m3 .n3-i2 {
+  background-color: var(--color1);
   border-radius: 12px;
-  /* align-self: end; */
 }
-.about #m3 p{
+
+.about #m3 .n0-i2 {
   color: var(--color5);
+}
+
+.about #m3 p {
   font-size: 1.6rem;
   line-height: 2rem;
+  color: var(--color5);
   font-weight: 200;
   font-family: 'DM Sans';
 }
-.about #m4 {
+
+.about #m4 ,.about #m8{
   padding: 2.5% 0%;
 }
-.about #m4 .n0-i1{
-padding-right: 6%;
-    padding-left:6%;
+
+.about #m4 .n0-i1,.about #m8 .n0-i1,.about #m8 .n1-i2{
+  padding-right: 6%;
+  padding-left: 6%;
 
 }
-.about #m5 i{
+
+.about #m5 i {
   font-size: 3.5rem;
   color: #FFDAE2;
 }
-.about #m5 hr{
+
+.about #m5 hr {
   margin-left: 11%;
 }
+
+.about #m5 h1 {
+  line-height: 56px;
+}
+
+.about #m6 .n1-i1 {
+  position: relative;
+  border-right: 1px solid var(--color6);
+}
+
+.about #m6 .time-circle::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color1);
+  border-radius: 50%;
+}
+
+.about #m6 .n0-i5 .n1-i1 {
+  border-image: linear-gradient(to bottom, var(--color6)55%, var(--color5)50%)1;
+}
+
+.time-content,
+.time-img {
+  place-content: center;
+}
+
+.time-img {
+  width: 40%;
+}
+
+.about #m7 .simpleGrid {
+  background-color: #F5476B;
+  color: white;
+  border-radius: 12px;
+}
+
+.about #m7 h2 {
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0px;
+  font-size: 3rem;
+}
+.about #m8 .n0-i2{
+  position: relative;
+  z-index: 1;
+}
+.about #m8 .n0-i2 .n1-i1 {
+background-color: var(--color7);
+position: absolute;
+top: 75%;
+padding: 9% 7% 2%;
+}
+/* .about #m6 p{
+  width: 40%;
+} */
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
 
