@@ -29,7 +29,7 @@
   --color5: white;
   --color6: #FFC7D3;
   --color7: #FFF0F3;
-
+  --color8: #18181A;
   --xs: 1%;
   --sm: 2.5%;
   --md: 5%;
@@ -312,6 +312,7 @@ p {
 section {
   padding: 3.5% 6%;
 }
+
 /*** 
 ====================================================================
     Page Styling - Start
@@ -371,7 +372,7 @@ button:hover {
 }
 
 /* Hero Image */
-.home #m1 .n0-i2 img{
+.home #m1 .n0-i2 img {
   display: block;
   width: 90%;
 }
@@ -391,7 +392,8 @@ button:hover {
   padding-bottom: 8%;
 }
 
-.home #m2 .n0-i1 {
+.home #m2 .n0-i1,
+.about #m2 .simpleGrid {
   width: 80%;
 }
 
@@ -590,25 +592,22 @@ section#f2{
 }
 
 .about #m1 h1 {
-  color: var(--color5);
   line-height: 1%;
 }
 
 
-.about #m1 .n0-i2{
+.about #m1 .n0-i2 {
   top: 38%;
 }
 
 .about #m2 .para-1 {
-  color: var(--color4)
+  color: var(--color8);
+  padding: 0 4%;
+  line-height: 3.5rem;
 }
 
-.about #m2 {
-  --px-xl: 18%;
-}
-
-.about #m3 h1 {
-  line-height: 86px;
+.about #m2,.about #m9 {
+  --px-xl: 13%;
 }
 
 .about #m3 .n3-i2 {
@@ -617,33 +616,46 @@ section#f2{
   border-radius: 12px;
 }
 
-.about #m3 .n0-i2 {
+.about #m3 .n0-i2,.about #m1 h1,.about #m3 p,.about #m7 .simpleGrid {
   color: var(--color5);
 }
 
 .about #m3 p {
   font-size: 1.6rem;
   line-height: 2rem;
-  color: var(--color5);
   font-weight: 200;
   font-family: 'DM Sans';
 }
 
 .about #m4 {
+  padding: 3.5% 0%;
+}
+.about #m5 .para-3{
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.about #m4,
+.about #m8 {
   padding: 2.5% 0%;
 }
 
-.about #m4 ,.about #m8{
-  padding: 2.5% 0%;
-}
-
-.about #m4 .n0-i1,.about #m8 .n0-i1,.about #m8 .n1-i2{
+.about #m4 .n0-i1,
+.about #m8 .n0-i1,
+.about #m8 .n1-i2 {
 
   padding-right: 6%;
   padding-left: 6%;
 
 }
-
+.about #m4 .n0-i2{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.about #m4 .n0-i2 .inner {
+  flex: 0 0 50%;
+  animation: scroll 20s linear infinite;
+}
 .about #m5 i {
   font-size: 3.5rem;
   color: #FFDAE2;
@@ -653,12 +665,8 @@ section#f2{
   margin-left: 11%;
 }
 
-.about #m5 h1 {
-  line-height: 56px;
-}
 
 .about #m6 .n1-i1 {
-  position: relative;
   border-right: 1px solid var(--color6);
 }
 
@@ -682,14 +690,13 @@ section#f2{
 .time-img {
   place-content: center;
 }
-
 .time-img {
   width: 40%;
 }
 
 .about #m7 .simpleGrid {
-  background-color: #F5476B;
-  color: white;
+  background-image: url(../img/about-bg.png);
+  background-position: center;
   border-radius: 12px;
 }
 
@@ -699,19 +706,29 @@ section#f2{
   letter-spacing: 0px;
   font-size: 3rem;
 }
-.about #m8 .n0-i2{
-  position: relative;
+
+.about #m8 .n0-i2 {
   z-index: 1;
 }
-.about #m8 .n0-i2 .n1-i1 {
-background-color: var(--color7);
-position: absolute;
-top: 75%;
-padding: 9% 7% 2%;
+.about #m8 .n0-i2 p{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1%;
 }
-/* .about #m6 p{
-  width: 40%;
-} */
+.about #m8 .n0-i2 .n1-i1 {
+  background-color: var(--color7);
+  position: absolute;
+  top: 75%;
+  padding: 9% 7% 3%;
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
 
