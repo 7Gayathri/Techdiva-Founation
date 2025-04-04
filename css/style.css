@@ -58,6 +58,7 @@ body {
   font-size: var();
   color: var();
   margin: auto;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -344,7 +345,7 @@ section {
 
 .nav-button {
   font-size: 1.6rem;
-  padding: 15px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 30px;
   color: var(--color5);
@@ -459,6 +460,7 @@ hr {
 .home #m5 .n0-i2 .n1-i1 p {
   color: var(--color5);
 }
+
 .home #m6 .n0-i2 {
   border-left: 0.75px solid var(--color6);
 }
@@ -482,9 +484,39 @@ hr {
   padding: 0 10px;
 }
 
+section#m8{
+  padding: 3.5% 0% 3.5% 6%;
+}
+
+/* Slider container */
+#slider {
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .story-card {
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px gray;
+  transition: transform 0.5s ease-in-out;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  transition: left 0.7s ease;
+  box-sizing: border-box;
+}
+
+/* Optional spacing between cards */
+.story-card:not(:last-child) {
+  margin-right: 20px; /* matches cardGap */
+}
+
+#m8 .prev-btn i,
+#m8 .next-btn i {
+  font-size: 3rem;
+  padding: 3px;
+  background-color: #FFDAE2;
+  color: #F5476B;
 }
 
 .home #m9 .n1-i1 img,
@@ -520,7 +552,7 @@ button {
   font-weight: 400;
   line-height: 16px;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 30px;
   border-radius: 20px;
   color: #F5476B;
 }
@@ -535,18 +567,19 @@ footer {
 #f1 a,
 #f2 p {
   color: #FFFFFF;
-  /* font-weight: 400; */
 }
 
 #f1 {
   --px-xl: 15%;
 }
 
-
 #f1 p.heading-coloured3 {
-
   color: #FEACBD;
   font-weight: 600;
+}
+
+section#f2{
+  padding: 1.5% 6%;
 }
 
 /* ====================================== About Page Style ====================================== */
