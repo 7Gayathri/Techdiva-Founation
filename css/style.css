@@ -59,6 +59,7 @@ body {
   color: var();
   margin: auto;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -305,12 +306,16 @@ p {
   margin: unset;
 }
 
-#f1 a {
-  line-height: 3rem;
+ul {
+  list-style-type: disc;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
 }
 
 section {
-  padding: 3.5% 6%;
+  /* padding: 3.5% 6%; */
+  padding: 3.5% 10%;
 }
 
 /*** 
@@ -336,7 +341,8 @@ section {
 
 .navbar {
   font-family: 'DM Sans', sans-serif;
-  padding: 3% 6%;
+  /* padding: 3% 6%; */
+  padding: 3% 10%;
 }
 
 /* logo-container */
@@ -416,11 +422,10 @@ button:hover {
   margin-top: 20%;
 }
 
-#m3 .n0-i1 {
+.home #m3 .n0-i1 {
   width: 80%;
 }
-
-#m3 .n0-i1 p {
+.home #m3 .n0-i1 p {
   color: #18181A;
 }
 
@@ -487,7 +492,8 @@ hr {
 }
 
 section#m8{
-  padding: 3.5% 0% 3.5% 6%;
+  /* padding: 3.5% 0% 3.5% 6%; */
+  padding: 3.5% 0% 3.5% 10%;
 }
 
 /* Slider container */
@@ -513,8 +519,8 @@ section#m8{
   margin-right: 20px; /* matches cardGap */
 }
 
-#m8 .prev-btn i,
-#m8 .next-btn i {
+.home #m8 .prev-btn i,
+.home #m8 .next-btn i {
   font-size: 3rem;
   padding: 3px;
   background-color: #FFDAE2;
@@ -575,13 +581,18 @@ footer {
   --px-xl: 15%;
 }
 
+#f1 a {
+  line-height: 3rem;
+}
+
 #f1 p.heading-coloured3 {
   color: #FEACBD;
   font-weight: 600;
 }
 
 section#f2{
-  padding: 1.5% 6%;
+  /* padding: 1.5% 6%; */
+  padding: 1.5% 10%;
 }
 
 /* ====================================== About Page Style ====================================== */
@@ -729,6 +740,110 @@ section#f2{
       transform: translateX(-100%);
   }
 }
+
+/* ====================================== All Girls Hackethon Page Style Start ====================================== */
+
+.agh .navbar{
+  background-color: var(--color1);
+}
+
+.agh .nav-menu a{
+  color: #ffffff;
+}
+
+.agh .nav-button {
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--color1);
+  background-color: var(--color5);
+}
+
+.agh #m1{
+  background-color: var(--color1);
+  padding: 0%;
+  margin-bottom: 3.5%;
+}
+
+.agh #m1 .n0-i1{
+  width: 20%;
+}
+
+.agh #m1 .n0-i2{
+  width: 60%;
+}
+
+.agh #m1 .n0-i2 h1{
+  color: #ffffff;
+}
+
+.agh #m4{
+  padding: 3.5% 0%;
+}
+
+.agh #m4 .n0-i1 {
+  /* padding: 0% 6%; */
+  padding: 0% 7.5%;
+}
+
+.agh #m4 .n0-i2 {
+  z-index: 1;
+}
+
+.agh #m4 .n0-i2 .n1-i2{
+  width: 90%;
+}
+
+.agh #m4 .n0-i2 p{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1%;
+}
+
+.agh #m4 .n0-i2 .n1-i1 {
+  background-color: var(--color7);
+  position: absolute;
+  top: 75%;
+  /* padding: 10% 6% 2% 6%; */
+  padding: 10% 7.5% 2% 7.5%;
+}
+
+.agh #m5 {
+  margin-top: 13.5%;
+}
+
+.edition-img-box {
+  width: 50%;
+}
+
+.edition-card {
+  width: 60%;
+  height: 85%;
+  align-content: center;
+}
+
+.edition-card button{
+  color: var(--color1);
+  font-weight: 700;
+  background-color: #FFD3DD;
+}
+
+.edition-card {
+  background-color: #FFF8FA;
+  padding: 5%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.edition-title span{
+  display: block;
+}
+
+/* ====================================== All Girls Hackethon Page Style End ====================================== */
+
+
+
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
 
