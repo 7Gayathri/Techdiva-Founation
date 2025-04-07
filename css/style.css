@@ -328,7 +328,7 @@ html {
 .slide-in-left {
   opacity: 0;
   transform: translateX(-60px);
-  transition: opacity 0.6s ease, transform 0.8s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .slide-in-left-img img {
   width: 100%;
@@ -344,7 +344,7 @@ html {
 .slide-in-right {
   opacity: 0;
   transform: translateX(70px);
-  transition: opacity 0.6s ease, transform 0.8s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 
@@ -702,7 +702,7 @@ section#f2{
   line-height: 3.5rem;
 }
 
-.about #m2,.about #m9 {
+.about #m2{
   --px-xl: 20%;
 }
 .about #m9 {
@@ -763,7 +763,6 @@ section#f2{
   margin-left: 11%;
 }
 
-
 .about #m6 .n1-i1 {
   border-right: 1px solid var(--color6);
 }
@@ -817,7 +816,7 @@ section#f2{
   background-color: var(--color7);
   position: absolute;
   top: 75%;
-  padding: 9% 7% 3%;
+  padding: 9% 10% 3%;
 }
 @keyframes scroll {
   0% {
