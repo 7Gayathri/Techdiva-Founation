@@ -115,6 +115,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ========================================== Home Page End ==========================================
-
-
-
