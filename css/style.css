@@ -80,7 +80,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2.6rem;
+  /* font-size: 2.6rem; */
+  font-size: 2.4rem;
   /* color: var(--color2); */
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -317,6 +318,11 @@ section {
   padding: 3.5% 10%;
 }
 
+h1>span,
+h2>span {
+  display: block;
+}
+
 /* Animation classes */
 
 
@@ -363,13 +369,16 @@ html {
   transform: translateX(-60px);
   transition: opacity 0.6s ease, transform 0.8s ease;
 }
+
 .slide-in-left-img img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
   object-position: left;
 }
-.slide-in-left.visible,.slide-in-right.visible{
+
+.slide-in-left.visible,
+.slide-in-right.visible {
   transform: translateX(0);
   opacity: 1;
 }
@@ -385,29 +394,37 @@ html {
   height: 430px;
   transform-origin: left;
 }
-.slide-in-left-img{
+
+.slide-in-left-img {
   width: 0;
   height: 100%;
   transform-origin: left;
 }
-#m8 img {
-  height:400px;
+
+.about #m8 img {
+  height: 400px;
 }
-.slide-in-left-img-flex.visible,.slide-in-left-img.visible {
-  animation: revealWidth 1.5s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Ease-in curve */
+
+.slide-in-left-img-flex.visible,
+.slide-in-left-img.visible {
+  animation: revealWidth 1.5s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  /* Ease-in curve */
 }
+
 @keyframes revealWidth {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
 }
+
 .slide-in-left-img-flex img {
   width: 100%;
-  height:430px;
-  object-fit:cover;
+  height: 430px;
+  object-fit: cover;
   object-position: left center;
 }
 
@@ -423,22 +440,28 @@ html {
   transition: opacity 0.8s ease, transform 0.6s ease;
 }
 
-.show-up.visible,.show-up-slow.visible {
+.show-up.visible,
+.show-up-slow.visible {
   opacity: 1;
   transform: translateY(0px);
 }
+
 header {
   animation: slideDown 0.8s ease-out 0.3s forwards;
   /* Adds a 0.3s delay before sliding */
 }
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
-    opacity: 0; /* Starts invisible */
+    opacity: 0;
+    /* Starts invisible */
   }
+
   100% {
     transform: translateY(0);
-    opacity: 1; /* Fades in while sliding */
+    opacity: 1;
+    /* Fades in while sliding */
   }
 }
 
@@ -542,12 +565,13 @@ button:hover {
 }
 
 .home #m3 {
-  margin-top: 20%;
+  margin-top: 16.5%;
 }
 
 .home #m3 .n0-i1 {
   width: 80%;
 }
+
 .home #m3 .n0-i1 p {
   color: #18181A;
 }
@@ -614,7 +638,7 @@ hr {
   padding: 0 10px;
 }
 
-section#m8{
+.home #m8 {
   /* padding: 3.5% 0% 3.5% 6%; */
   padding: 3.5% 0% 3.5% 10%;
 }
@@ -639,7 +663,8 @@ section#m8{
 
 /* Optional spacing between cards */
 .story-card:not(:last-child) {
-  margin-right: 20px; /* matches cardGap */
+  margin-right: 20px;
+  /* matches cardGap */
 }
 
 .home #m8 .prev-btn i,
@@ -713,7 +738,7 @@ footer {
   font-weight: 600;
 }
 
-section#f2{
+section#f2 {
   /* padding: 1.5% 6%; */
   padding: 1.5% 10%;
 }
@@ -740,19 +765,25 @@ section#f2{
   line-height: 3.5rem;
 }
 
-.about #m2,.about #m9 {
+.about #m2,
+.about #m9 {
   --px-xl: 20%;
 }
+
 .about #m9 {
   --px-xl: 13%;
 }
+
 .about #m3 .n3-i2 {
   background-color: var(--color1);
   height: fit-content;
   border-radius: 12px;
 }
 
-.about #m3 .n0-i2,.about #m1 h1,.about #m3 p,.about #m7 .simpleGrid {
+.about #m3 .n0-i2,
+.about #m1 h1,
+.about #m3 p,
+.about #m7 .simpleGrid {
   color: var(--color5);
 }
 
@@ -766,10 +797,12 @@ section#f2{
 .about #m4 {
   padding: 3.5% 0%;
 }
-.about #m5 .para-3{
+
+.about #m5 .para-3 {
   font-size: 1.8rem;
   line-height: 2.3rem;
 }
+
 .about #m4,
 .about #m8 {
   padding: 3.5% 0%;
@@ -783,15 +816,18 @@ section#f2{
   padding-left: 10%;
 
 }
-.about #m4 .n0-i2{
+
+.about #m4 .n0-i2 {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
 }
+
 .about #m4 .n0-i2 .inner {
   flex: 0 0 50%;
   animation: scroll 20s linear infinite;
 }
+
 .about #m5 i {
   font-size: 3.5rem;
   color: #FFDAE2;
@@ -826,6 +862,7 @@ section#f2{
 .time-img {
   place-content: center;
 }
+
 .time-img {
   width: 40%;
 }
@@ -846,33 +883,37 @@ section#f2{
 .about #m8 .n0-i2 {
   z-index: 1;
 }
-.about #m8 .n0-i2 p{
+
+.about #m8 .n0-i2 p {
   font-size: 1.6rem;
   line-height: 2rem;
   padding-top: 1%;
 }
+
 .about #m8 .n0-i2 .n1-i1 {
   background-color: var(--color7);
   position: absolute;
   top: 75%;
   padding: 9% 7% 3%;
 }
+
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 /* ====================================== All Girls Hackethon Page Style Start ====================================== */
 
-.agh .navbar{
+.agh .navbar {
   background-color: var(--color1);
 }
 
-.agh .nav-menu a{
+.agh .nav-menu a {
   color: #ffffff;
 }
 
@@ -885,42 +926,41 @@ section#f2{
   background-color: var(--color5);
 }
 
-.agh #m1{
+.agh #m1 {
   background-color: var(--color1);
   padding: 0%;
   margin-bottom: 3.5%;
 }
 
-.agh #m1 .n0-i1{
+.agh #m1 .n0-i1 {
   width: 20%;
 }
 
-.agh #m1 .n0-i2{
+.agh #m1 .n0-i2 {
   width: 60%;
 }
 
-.agh #m1 .n0-i2 h1{
+.agh #m1 .n0-i2 h1 {
   color: #ffffff;
 }
 
-.agh #m4{
+.agh #m4 {
   padding: 3.5% 0%;
 }
 
 .agh #m4 .n0-i1 {
-  /* padding: 0% 6%; */
-  padding: 0% 7.5%;
+  padding: 0% 10%;
 }
 
 .agh #m4 .n0-i2 {
   z-index: 1;
 }
 
-.agh #m4 .n0-i2 .n1-i2{
-  width: 90%;
+.agh #m4 .n0-i2 .n1-i2 {
+  width: 80%;
 }
 
-.agh #m4 .n0-i2 p{
+.agh #m4 .n0-i2 p {
   font-size: 1.6rem;
   line-height: 2rem;
   padding-top: 1%;
@@ -929,13 +969,26 @@ section#f2{
 .agh #m4 .n0-i2 .n1-i1 {
   background-color: var(--color7);
   position: absolute;
-  top: 75%;
-  /* padding: 10% 6% 2% 6%; */
-  padding: 10% 7.5% 2% 7.5%;
+  top: 50%;
+  padding: 13% 10% 2% 10%;
 }
 
 .agh #m5 {
   margin-top: 13.5%;
+}
+
+.agh #m5 .simpleGrid {
+  background-image: url(../img/about-bg.png);
+  background-position: center;
+  border-radius: 12px;
+}
+
+.agh #m5 h2 {
+  color: var(--color5);
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0px;
+  font-size: 3rem;
 }
 
 .edition-img-box {
@@ -944,11 +997,11 @@ section#f2{
 
 .edition-card {
   width: 60%;
-  height: 85%;
+  height: 90%;
   align-content: center;
 }
 
-.edition-card button{
+.edition-card button {
   color: var(--color1);
   font-weight: 700;
   background-color: #FFD3DD;
@@ -956,13 +1009,44 @@ section#f2{
 
 .edition-card {
   background-color: #FFF8FA;
-  padding: 5%;
+  padding: 3%;
   position: absolute;
   border-radius: 10px;
 }
 
-.edition-title span{
+.edition-title span {
   display: block;
+}
+
+.agh #m9 {
+  background-color: #FFF8FA;
+  padding-bottom: 7%;
+}
+
+.support-card {
+  background-color: var(--color5);
+  border-radius: 10px;
+}
+
+.support-card .n4-i2 p {
+  color: var(--color1);
+}
+
+.support-card .n4-i4 li {
+  color: var(--color4);
+}
+
+.support-card-btn {
+  top: 2%;
+}
+
+.support-cards button {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+
+.agh footer {
+  margin-top: unset;
 }
 
 /* ====================================== All Girls Hackethon Page Style End ====================================== */
