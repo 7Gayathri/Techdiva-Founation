@@ -59,7 +59,6 @@ body {
   color: var();
   margin: auto;
   background-color: #ffffff;
-  scroll-behavior: smooth;
 }
 
 h1 {
@@ -80,8 +79,7 @@ h2 {
 }
 
 h3 {
-  /* font-size: 2.6rem; */
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   /* color: var(--color2); */
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -307,54 +305,14 @@ p {
   margin: unset;
 }
 
-ul {
-  list-style-type: disc;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 3.2rem;
+#f1 a {
+  line-height: 3rem;
 }
 
 section {
   padding: 3.5% 10%;
 }
 
-h1>span,
-h2>span {
-  display: block;
-}
-
-/* Animation classes */
-
-
-/* .zoom-in {
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform-origin: top center;
-  animation: revealHeight 1s forwards cubic-bezier(0.65, 0, 0.35, 1);
-} */
-
-/* @keyframes revealHeight {
-  0% {
-    height: 0;
-    opacity: 0;
-  }
-  100% {
-    height: 430px; Set your exact height here
-    opacity: 1;
-  }
-} */
-
-/* .zoom-in img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-} */
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 
 /*** 
 ====================================================================
@@ -363,22 +321,22 @@ html {
 ***/
 
 /* Add delays for each team member */
-
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 .slide-in-left {
   opacity: 0;
   transform: translateX(-60px);
   transition: opacity 0.6s ease, transform 0.8s ease;
 }
-
 .slide-in-left-img img {
   width: 100%;
-  height: 100%;
+  height:100%;
   object-fit: cover;
   object-position: left;
 }
-
-.slide-in-left.visible,
-.slide-in-right.visible {
+.slide-in-left.visible,.slide-in-right.visible{
   transform: translateX(0);
   opacity: 1;
 }
@@ -389,42 +347,35 @@ html {
   transition: opacity 0.6s ease, transform 0.8s ease;
 }
 
-.slide-in-left-img-flex {
-  width: 0;
-  height: 430px;
-  transform-origin: left;
-}
 
-.slide-in-left-img {
+.slide-in-left-img{
   width: 0;
   height: 100%;
   transform-origin: left;
 }
-
 .about #m8 img {
-  height: 400px;
+  height:400px;
 }
-
-.slide-in-left-img-flex.visible,
-.slide-in-left-img.visible {
-  animation: revealWidth 1.5s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  /* Ease-in curve */
+.slide-in-left-img-flex.visible,.slide-in-left-img.visible {
+  animation: revealWidth 1.5s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53); /* Ease-in curve */
 }
-
 @keyframes revealWidth {
   0% {
     width: 0;
   }
-
   100% {
     width: 100%;
   }
 }
-
+.slide-in-left-img-flex {
+  width: 0;
+  height: 390px;
+  transform-origin: left;
+}
 .slide-in-left-img-flex img {
   width: 100%;
-  height: 430px;
-  object-fit: cover;
+  height: 390px;
+  object-fit:cover;
   object-position: left center;
 }
 
@@ -440,41 +391,23 @@ html {
   transition: opacity 0.8s ease, transform 0.6s ease;
 }
 
-.show-up.visible,
-.show-up-slow.visible {
+.show-up.visible,.show-up-slow.visible {
   opacity: 1;
   transform: translateY(0px);
 }
-
 header {
   animation: slideDown 0.8s ease-out 0.3s forwards;
   /* Adds a 0.3s delay before sliding */
 }
-
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
-    opacity: 0;
-    /* Starts invisible */
+    opacity: 0; /* Starts invisible */
   }
-
   100% {
     transform: translateY(0);
-    opacity: 1;
-    /* Fades in while sliding */
+    opacity: 1; /* Fades in while sliding */
   }
-}
-
-.revealed {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease-out;
-}
-
-.revealed.outview {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.4s ease-in;
 }
 /*** 
 ====================================================================
@@ -499,7 +432,7 @@ header {
 
 .navbar {
   font-family: 'DM Sans', sans-serif;
-  padding: 1.5% 10%;
+  padding: 1.5% 6%;
 }
 
 /* logo-container */
@@ -576,14 +509,14 @@ button:hover {
 }
 
 .home #m3 {
-  margin-top: 16.5%;
+  margin-top: 20%;
 }
 
-.home #m3 .n0-i1 {
+#m3 .n0-i1 {
   width: 80%;
 }
 
-.home #m3 .n0-i1 p {
+#m3 .n0-i1 p {
   color: #18181A;
 }
 
@@ -649,9 +582,8 @@ hr {
   padding: 0 10px;
 }
 
-.home #m8 {
-  /* padding: 3.5% 0% 3.5% 6%; */
-  padding: 3.5% 0% 3.5% 10%;
+section#m8{
+  padding: 3.5% 0% 3.5% 6%;
 }
 
 /* Slider container */
@@ -674,12 +606,11 @@ hr {
 
 /* Optional spacing between cards */
 .story-card:not(:last-child) {
-  margin-right: 20px;
-  /* matches cardGap */
+  margin-right: 20px; /* matches cardGap */
 }
 
-.home #m8 .prev-btn i,
-.home #m8 .next-btn i {
+#m8 .prev-btn i,
+#m8 .next-btn i {
   font-size: 3rem;
   padding: 3px;
   background-color: #FFDAE2;
@@ -740,18 +671,13 @@ footer {
   --px-xl: 15%;
 }
 
-#f1 a {
-  line-height: 3rem;
-}
-
 #f1 p.heading-coloured3 {
   color: #FEACBD;
   font-weight: 600;
 }
 
-section#f2 {
-  /* padding: 1.5% 6%; */
-  padding: 1.5% 10%;
+section#f2{
+  padding: 1.5% 6%;
 }
 
 /* ====================================== About Page Style ====================================== */
@@ -776,25 +702,19 @@ section#f2 {
   line-height: 3.5rem;
 }
 
-.about #m2,
-.about #m9 {
+.about #m2,.about #m9 {
   --px-xl: 20%;
 }
-
 .about #m9 {
   --px-xl: 13%;
 }
-
 .about #m3 .n3-i2 {
   background-color: var(--color1);
   height: fit-content;
   border-radius: 12px;
 }
 
-.about #m3 .n0-i2,
-.about #m1 h1,
-.about #m3 p,
-.about #m7 .simpleGrid {
+.about #m3 .n0-i2,.about #m1 h1,.about #m3 p,.about #m7 .simpleGrid {
   color: var(--color5);
 }
 
@@ -808,12 +728,10 @@ section#f2 {
 .about #m4 {
   padding: 3.5% 0%;
 }
-
-.about #m5 .para-3 {
+.about #m5 .para-3{
   font-size: 1.8rem;
   line-height: 2.3rem;
 }
-
 .about #m4,
 .about #m8 {
   padding: 3.5% 0%;
@@ -827,18 +745,15 @@ section#f2 {
   padding-left: 10%;
 
 }
-
-.about #m4 .n0-i2 {
+.about #m4 .n0-i2{
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
 }
-
 .about #m4 .n0-i2 .inner {
   flex: 0 0 50%;
   animation: scroll 20s linear infinite;
 }
-
 .about #m5 i {
   font-size: 3.5rem;
   color: #FFDAE2;
@@ -873,7 +788,6 @@ section#f2 {
 .time-img {
   place-content: center;
 }
-
 .time-img {
   width: 40%;
 }
@@ -894,27 +808,23 @@ section#f2 {
 .about #m8 .n0-i2 {
   z-index: 1;
 }
-
-.about #m8 .n0-i2 p {
+.about #m8 .n0-i2 p{
   font-size: 1.6rem;
   line-height: 2rem;
   padding-top: 1%;
 }
-
 .about #m8 .n0-i2 .n1-i1 {
   background-color: var(--color7);
   position: absolute;
   top: 75%;
   padding: 9% 7% 3%;
 }
-
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
-
   100% {
-    transform: translateX(-100%);
+      transform: translateX(-100%);
   }
 }
 
