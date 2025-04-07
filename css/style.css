@@ -79,7 +79,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   /* color: var(--color2); */
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -305,14 +305,14 @@ p {
   margin: unset;
 }
 
-#f1 a {
-  line-height: 3rem;
-}
-
 section {
   padding: 3.5% 10%;
 }
 
+h1>span,
+h2>span {
+  display: block;
+}
 
 /*** 
 ====================================================================
@@ -509,14 +509,14 @@ button:hover {
 }
 
 .home #m3 {
-  margin-top: 20%;
+  margin-top: 16.5%;
 }
 
-#m3 .n0-i1 {
+.home #m3 .n0-i1 {
   width: 80%;
 }
 
-#m3 .n0-i1 p {
+.home #m3 .n0-i1 p {
   color: #18181A;
 }
 
@@ -582,7 +582,7 @@ hr {
   padding: 0 10px;
 }
 
-section#m8{
+.home #m8{
   padding: 3.5% 0% 3.5% 6%;
 }
 
@@ -609,8 +609,8 @@ section#m8{
   margin-right: 20px; /* matches cardGap */
 }
 
-#m8 .prev-btn i,
-#m8 .next-btn i {
+.home #m8 .prev-btn i,
+.home #m8 .next-btn i {
   font-size: 3rem;
   padding: 3px;
   background-color: #FFDAE2;
@@ -669,6 +669,10 @@ footer {
 
 #f1 {
   --px-xl: 15%;
+}
+
+#f1 a {
+  line-height: 3rem;
 }
 
 #f1 p.heading-coloured3 {
