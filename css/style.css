@@ -827,6 +827,243 @@ section#f2{
       transform: translateX(-100%);
   }
 }
+
+/* ====================================== All Girls Hackethon Page Style Start ====================================== */
+
+.agh .navbar {
+  background-color: var(--color1);
+}
+
+.agh .nav-menu a {
+  color: #ffffff;
+}
+
+.agh .nav-button {
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--color1);
+  background-color: var(--color5);
+}
+
+.agh #m1 {
+  background-color: var(--color1);
+  padding: 0%;
+  margin-bottom: 3.5%;
+}
+
+.agh #m1 .n0-i1 {
+  width: 20%;
+}
+
+.agh #m1 .n0-i2 {
+  width: 60%;
+}
+
+.agh #m1 .n0-i2 h1 {
+  color: #ffffff;
+}
+
+.agh #m4 {
+  padding: 3.5% 0%;
+}
+
+.agh #m4 .n0-i1 {
+  padding: 0% 10%;
+}
+
+.agh #m4 .n0-i2 {
+  z-index: 1;
+}
+
+.agh #m4 .n0-i2 .n1-i2 {
+  width: 80%;
+}
+
+.agh #m4 .n0-i2 p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1%;
+}
+
+.agh #m4 .n0-i2 .n1-i1 {
+  background-color: var(--color7);
+  position: absolute;
+  top: 50%;
+  padding: 13% 10% 2% 10%;
+}
+
+.agh #m5 {
+  margin-top: 13.5%;
+}
+
+.agh #m5 .simpleGrid {
+  background-image: url(../img/about-bg.png);
+  background-position: center;
+  border-radius: 12px;
+}
+
+.agh #m5 h2 {
+  color: var(--color5);
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0px;
+  font-size: 3rem;
+}
+
+.edition-img-box {
+  width: 50%;
+}
+
+.edition-card {
+  width: 60%;
+  height: 90%;
+  align-content: center;
+}
+
+.edition-card button {
+  color: var(--color1);
+  font-weight: 700;
+  background-color: #FFD3DD;
+}
+
+.edition-card {
+  background-color: #FFF8FA;
+  padding: 3%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.edition-title span {
+  display: block;
+}
+
+.agh #m9 {
+  background-color: #FFF8FA;
+  padding-bottom: 7%;
+}
+
+.support-card {
+  background-color: var(--color5);
+  border-radius: 10px;
+}
+
+.support-card .n4-i2 p {
+  color: var(--color1);
+}
+
+.support-card .n4-i4 li {
+  color: var(--color4);
+}
+
+.support-card-btn {
+  top: 2%;
+}
+
+.support-cards button {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+
+.agh footer {
+  margin-top: unset;
+}
+
+/* ====================================== All Girls Hackethon Page Style End ====================================== */
+
+/* ====================================== Techdiva Class Page Style Start ====================================== */
+
+.tdclass .navbar {
+  background-color: #FFD16F;
+}
+
+.tdclass .nav-menu a {
+  color: var(--color3);
+}
+
+.tdclass .nav-button {
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--color5);
+  background-color: var(--color1);
+}
+
+.tdclass .hero-section {
+  background-color: #FFD16F;
+  padding: 0%;
+  margin-bottom: 3.5%;
+}
+
+.hero-section .n0-i1 {
+  width: 20%;
+}
+
+.hero-section .n0-i2 {
+  width: 60%;
+}
+
+.hero-section .n0-i2 h1 {
+  color: var(--color1);
+}
+
+.info-section i{
+  font-size: 1.8rem;
+  color: var(--color1);
+  line-height: unset;
+}
+
+.tdclass .experince-section {
+  padding: 3.5% 0%;
+}
+
+.tdclass .experince-section .n0-i1 {
+  padding: 0% 10%;
+}
+
+.tdclass .experince-section .n0-i2 {
+  z-index: 1;
+}
+
+.tdclass .experince-section .n0-i2 .n1-i2 {
+  width: 80%;
+}
+
+.tdclass .experince-section .n0-i2 p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1%;
+}
+
+.tdclass .experince-section .n0-i2 .n1-i1 {
+  background-color: var(--color7);
+  position: absolute;
+  top: 50%;
+  padding: 13% 10% 2% 10%;
+}
+
+.tdclass #m5 {
+  margin-top: 13.5%;
+}
+
+.tdclass #m5 .simpleGrid {
+  background-image: url(../img/about-bg.png);
+  background-position: center;
+  border-radius: 12px;
+}
+
+.tdclass #m5 h2 {
+  color: var(--color5);
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0px;
+  font-size: 3rem;
+}
+
+/* ====================================== Techdiva Class Page Style End ====================================== */
+
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
 
