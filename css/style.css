@@ -781,7 +781,7 @@ section#f2 {
 .about #m4 .n0-i1,
 .about #m8 .n0-i1,
 .about #m8 .n1-i2,
-.techies #m2 .scroll-img {
+.techies #m2 .n0-i1 {
 
   padding-right: 10%;
   padding-left: 10%;
@@ -792,6 +792,7 @@ section#f2 {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  margin-top: 4%;
 }
 
 .scroll-img .inner {
@@ -1154,11 +1155,60 @@ section#f2 {
 /* ====================================== Techies Page Style Start ====================================== */
 
 .techies .hero-section .n0-i1 {
-  width: 35%;
+  width: 33%;
+}
+.techies .hero-section{
+  padding: 0%;
+  padding-top: 3.5%;
+  margin-bottom: 3.5%;
 }
 
 .techies .hero-section,.techies .navbar {
   background-color:var(--color9);
+}
+
+.techies #m4 .inner-flex .inner{
+  background-color: var(--color7);
+  flex: 0 0 calc(40% - 10px);
+  scroll-snap-align: start;
+  min-width: 0;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.techies #m4 .inner-flex{
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.techies #m4 {
+  padding-right: 0%;
+}
+.techies #m4 .n0-i1{
+  padding-right: 10%;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-icon {
+  width: 15px;
+  height: 3px;
+  border-radius: 12px;
+  background-color:#eeafbd ;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-icon.active {
+  background-color: var(--color1);
+  width: 4%;
+  border-radius: 20px;
 }
 
 /* ====================================== Techhub Page Style Start ====================================== */
