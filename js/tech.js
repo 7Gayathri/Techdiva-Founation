@@ -1,5 +1,5 @@
 $(function() {
-    $('section h1, section h2,section h3,section p,section h5,.show-img img').addClass('show-up');
+    $('section h1, section h2,section h3,section h5,.show-img img').addClass('show-up');
   
     function checkIfInView() {
         $('.show-up, .slide-in-left, .slide-in-right, .slide-in-left-img,.slide-in-left-img-flex, .show-up-slow').each(function(index) {
@@ -11,7 +11,7 @@ $(function() {
           if (scroll + windowHeight > position) {
             setTimeout(() => {
               element.addClass('visible');
-          }, index * 10);
+          });
           }
         });
       }
@@ -59,5 +59,4 @@ $(function() {
       }
     });
   });
-
 
