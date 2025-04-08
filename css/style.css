@@ -62,10 +62,11 @@ body {
 }
 
 h1 {
-  font-size: 5.8rem;
+  /* font-size: 5.8rem; */
+  font-size: 5.4rem;
   /* color: var(--color2); */
   font-weight: 700;
-  line-height: 66px;
+  line-height: 6.2rem;
   letter-spacing: 0px;
 }
 
@@ -83,7 +84,7 @@ h3 {
   /* color: var(--color2); */
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  line-height: 3.4rem;
+  line-height: 3.2rem;
   letter-spacing: -1px;
 }
 
@@ -305,6 +306,15 @@ p {
   margin: unset;
 }
 
+ul {
+  /* list-style-type: disc; */
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* line-height: 3.2rem; */
+  line-height: 2.6rem;
+}
+
 section {
   padding: 3.5% 10%;
 }
@@ -497,7 +507,8 @@ button:hover {
   font-size: 3rem;
   color: var(--color5);
   font-weight: 400;
-  line-height: 4.2rem;
+  /* line-height: 4.2rem; */
+  line-height: 3.8rem;
 }
 
 .home #m2 .n0-i2 {
@@ -525,7 +536,7 @@ button:hover {
   color: #414044;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   letter-spacing: 0px;
 }
 
@@ -648,7 +659,7 @@ button {
   font-size: 1.6rem;
   font-family: 'DM Sans';
   font-weight: 400;
-  line-height: 16px;
+  line-height: 2.2rem;
   border: none;
   padding: 10px 30px;
   border-radius: 20px;
@@ -911,7 +922,7 @@ section#f2{
 .agh #m5 h2 {
   color: var(--color5);
   font-weight: 300;
-  line-height: 42px;
+  /* line-height: 42px; */
   letter-spacing: 0px;
   font-size: 3rem;
 }
@@ -1066,7 +1077,118 @@ section#f2{
   font-size: 3rem;
 }
 
+.tdclass #m7 h1 > span {
+  display: inline;
+}
+
+.tdclass #m8 {
+  background-color: #FFF8FA;
+  padding-bottom: 7%;
+}
+
+.tdclass footer{
+  margin-top: unset;
+}
+
+.tdclass #m8 i{
+  font-size: 0.5rem;
+  color: var(--color2);
+  line-height: 2.2rem;
+}
+
+.tdclass .support-card{
+  padding-bottom: 7.5%;
+}
+
+.tdclass .support-card-btn {
+  top: 3%;
+}
+
+.phase-card{
+  background-color: #FFF8FA;
+  border-radius: 10px;
+}
+
+.phase-card button {
+  color: var(--color1);
+  font-weight: 700;
+  background-color: #FFD3DD;
+}
+
+
 /* ====================================== Techdiva Class Page Style End ====================================== */
+
+/* ====================================== Techhub Page Style Start ====================================== */
+
+.techhub .navbar {
+  background-color: #C4D7FF;
+}
+
+.techhub .nav-menu a {
+  color: var(--color3);
+}
+
+.techhub .nav-button {
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--color5);
+  background-color: var(--color1);
+}
+
+.techhub .hero-section {
+  background-color: #C4D7FF;
+  padding: 0%;
+  margin-bottom: 3.5%;
+}
+
+.techhub .hero-section .n0-i1 {
+  width: 20%;
+}
+
+.techhub .hero-section .n0-i2 h1 {
+  color: #3E5874;
+}
+
+
+
+.techhub .experince-section {
+  padding: 3.5% 0%;
+}
+
+.techhub .experince-section .n0-i1 {
+  padding: 0% 10%;
+}
+
+.techhub .experince-section .n0-i2 {
+  z-index: 1;
+}
+
+.techhub .experince-section .n0-i2 .n1-i2 {
+  width: 80%;
+}
+
+.techhub .experince-section .n0-i2 p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1%;
+}
+
+.techhub .experince-section .n0-i2 .n1-i1 {
+  background-color: var(--color7);
+  position: absolute;
+  top: 50%;
+  padding: 13% 10% 2% 10%;
+}
+
+.techhub #m5 {
+  margin-top: 14%;
+}
+
+
+
+/* ====================================== Techhub Page Style End ====================================== */
 
 /** Level2 - Double Classes **/
 /** Level3 - Multi Classes **/
